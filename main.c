@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- * main -it is an entry point
+ * main - entry point
  * @ac: arg count
  * @av: arg vector
- * Return: 0 for success, 1 on error
+ *
+ * Return: 0 on success, 1 on error
  */
 int main(int ac, char **av)
 {
@@ -41,3 +42,4 @@ int main(int ac, char **av)
 	hsh(info, av);
 	return (EXIT_SUCCESS);
 }
+
