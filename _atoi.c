@@ -1,3 +1,4 @@
+
 #include "shell.h"
 
 /**
@@ -12,10 +13,10 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - checks if character is a delimeter
- * @c: the character to check
+ * is_delim - to check if character is a delimeter
+ * @c: the char to check
  * @delim: the delimeter string
- * Return: 1 if true, 0 if false
+ * Return: 1 if True, 0 if False
  */
 int is_delim(char c, char *delim)
 {
@@ -26,9 +27,9 @@ int is_delim(char c, char *delim)
 }
 
 /**
- *_isalpha - checks for alphabetic character
- *@c: The character to input
- *Return: 1 if c is alphabetic, 0 otherwise
+ * _isalpha - checks for alphabetic character
+ * @c: The character to input
+ * Return: 1 if c is alphabetic, 0 if not
  */
 
 int _isalpha(int c)
@@ -40,9 +41,9 @@ int _isalpha(int c)
 }
 
 /**
- *_atoi - converts a string to an integer
- *@s: the string to be converted
- *Return: 0 if no number in string, converte number otherwise
+ * _atoi - converts a string to an integer
+ * @s: the string to be converted
+ * Return: 0 if no number in string, converted number otherwise
  */
 
 int _atoi(char *s)
@@ -50,7 +51,7 @@ int _atoi(char *s)
 	int i, sign = 1, flag = 0, output;
 	unsigned int result = 0;
 
-	for (i = 0;  s[i] != '\0' && flag != 2; i++)
+	for (i = 0; s[i] != '\0' && flag != 2; i++)
 	{
 		if (s[i] == '-')
 			sign *= -1;
@@ -72,3 +73,4 @@ int _atoi(char *s)
 
 	return (output);
 }
+
